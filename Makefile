@@ -11,7 +11,7 @@ F_CPU = 16000000UL
 # Compiler and flags
 CC = avr-gcc
 OBJCOPY = avr-objcopy
-CFLAGS = -Wall -Os -DF_CPU=$(F_CPU) -mmcu=$(MCU)
+CFLAGS = -mmcu=atmega328p -DF_CPU=16000000UL -Os -std=c99
 LDFLAGS = -mmcu=$(MCU)
 
 # Output format
